@@ -31,6 +31,11 @@
       }
 
     */
+    html{
+      scroll-behavior: smooth;
+      padding: 0px;
+      margin: 0px;
+    }
   
       swiper-slide img {
         display: block;
@@ -41,7 +46,7 @@
     <script src="assets/swiper-bundle.min.js"></script>
    
   </head>
-  <body class=" dark:bg-dark -z-10 w-full">
+  <body class=" dark:bg-dark -z-10 w-full mx-0 overflow-x-hidden px-0 ">
     
 
 
@@ -200,9 +205,9 @@
     </section>
 
     
-    <div class="relative lg:hidden md:hidden  p-2 z-10 w-full "  >
+    <div class="relative lg:hidden md:hidden mx-0  p-2 z-10 w-full "  >
           
-      <swiper-container class="mySwiper p-8 "  autoplay-delay="2500" autoplay-disable-on-interaction="false" effect="cards" grab-cursor="true">
+      <swiper-container class="mySwiper mx-0 overflow-x-hidden px-4 "  autoplay-delay="2500" autoplay-disable-on-interaction="false" effect="cards" grab-cursor="true">
         <swiper-slide class="bg-center bg-cover ">
           <a href="#" class="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
               <img class="object-cover w-full rounded-t-lg h-96 md:h-[19em] md:w-48 md:rounded-none md:rounded-s-lg" src="images/17584.jpg" alt="">
@@ -215,7 +220,7 @@
         <swiper-slide>
           
           <a href="#" class="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
-            <img class="object-cover w-full rounded-t-lg h-96 md:h-[19em] md:h-auto md:w-48 md:rounded-none md:rounded-s-lg" src="/images/bibleouverte.jpg" alt="">
+            <img class="object-cover w-full rounded-t-lg h-96 md:h-[19em] md:h-auto md:w-48 md:rounded-none md:rounded-s-lg" src="images/bibleouverte.jpg" alt="">
             <div class="flex flex-col justify-between p-4 leading-normal">
                 <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Théologie : Bible</h5>
                 <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Survols sur l'histoire de la bible, Survol de l'ancien Testament, Survol du nouveau Testament, Hermeneutique, Homilétique</p>
@@ -300,12 +305,12 @@
       Nos Partenaires
     </p>
 
-    <div class="relative flex flex-wrap justify-between mt-12">
+    <div class="relative flex flex-wrap bg-blue-800 rounded justify-between mt-12">
       <div class="grid justify-between w-full">
-        <div class="absolute inset-0 left-0 z-10 from-white via-white to-transparent w-44 bg-gradient-to-r"></div>
-        <div class="absolute inset-0 left-0 z-10 ml-auto from-white via-white to-transparent w-44 bg-gradient-to-l"></div>
+        <div class="absolute inset-0 left-0 z-10 lg:opacity-0 lg:from-white lg:text-gray-800 lg:via-white lg:to-transparent w-full lg:bg-gradient-to-r"></div>
+        <div class="absolute inset-0 left-0 z-10 lg:opacity-0 ml-auto lg:from-white lg:via-white to-transparent w-full lg:bg-gradient-to-l"></div>
       </div>
-      <div class="relative flex justify-center col-span-1 px-8">
+      <div class="relative flex justify-center col-span-1 lg:px-8">
         <img class="max-h-12" src="images/1.svg" alt="logo">
       </div>
       <div class="flex justify-center col-span-1 px-8">
